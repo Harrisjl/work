@@ -14,13 +14,14 @@ request("http://www.google.com", function (error, response, body) {
 });
 */
 // I was finally able to get this one to run! Yay!!!
-var http = require("http");
+/*var http = require("http");
 http
-  .createServer(function(req, res) {
-    res.writeHead(200, { "Content-Type": "text/html" });
-    res.write("Happy Coding!");
-
-/*var http = require('http');
+    .createServer(function (req, res) {
+        res.writeHead(200, { "Content-Type": "text/html" });
+        res.write("Happy Coding!");
+    }) 
+    */
+var http = require('http');
 http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.write('Happy Coding World!');

@@ -4,8 +4,33 @@ When a file has been created
 When a file has been written to
 When a file has been read
 */
+//const readline = require('readline');
+//var events = require('events');
 
-var movement = require('movement');
+/*const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+*/
+
+var fs = require('fs');
+var data = "\nLearning to code with Node.js is also appending statements to a web page.";
+
+
+//rl.question("What are you doing?", (answer)=>{
+	// write to a new file named text.txt
+fs.appendFile('What are you doing?', data, 'utf8',
+    function (err) {
+        if (err) throw err;  
+  // throws an error, you could also catch it here
+  
+
+  // success case, the file was saved
+  console.log('Training at ClubHouse Coding Successful');
+});
+
+
+/*var movement = require('movement');
 var movementEmitter = new movement.MovementEmitter();
 
 // listener #1
@@ -44,3 +69,30 @@ movementListeners = require('movement').MovementEmitter.listenerCount(movementEm
 console.log(movementListeners + "Movement(s) to connect movement");
 
 console.log("Event has Ended");
+*/
+// Import events module
+//var events = require('events');
+
+// Create an eventEmitter object
+//var eventEmitter = new events.EventEmitter();
+
+// Create an event handler as follows
+//var connectHandler = function connected() {
+  // console.log('connection succesful.');
+  
+   // Fire the data_received event 
+   //eventEmitter.emit('data_received');
+//}
+
+// Bind the connection event with the handler
+//eventEmitter.on('connection', connectHandler);
+ 
+// Bind the data_received event with the anonymous function
+//eventEmitter.on('data_received', function() {
+   //console.log('data received succesfully.');
+//});
+
+// Fire the connection event 
+//eventEmitter.emit('connection');
+
+//console.log("Program Ended.");

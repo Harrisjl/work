@@ -13,22 +13,18 @@ When a file has been read
 });
 */
 
-var fs = require('fs');
-var data = "\nLearning to code with Node.js is also appending statements to a web page.";
-
+var fs = require("fs");
+var data = "\nLearn Node.js with the help of well built Node.js Tutorial.";
 
 //rl.question("What are you doing?", (answer)=>{
-	// write to a new file named text.txt
-fs.appendFile('What are you doing?', data, 'utf8',
-    function (err) {
-        if (err) throw err;  
+// write to a new file named text.txt
+fs.appendFile("What is this?", data, "utf8", function(err) {
+  if (err) throw err;
   // throws an error, you could also catch it here
-  
 
   // success case, the file was saved
-  console.log('Training at ClubHouse Coding Successful');
+  console.log("Data is appended to file successfully");
 });
-
 
 /*var movement = require('movement');
 var movementEmitter = new movement.MovementEmitter();
@@ -78,21 +74,21 @@ console.log("Event has Ended");
 
 // Create an event handler as follows
 //var connectHandler = function connected() {
-  // console.log('connection succesful.');
-  
-   // Fire the data_received event 
-   //eventEmitter.emit('data_received');
+// console.log('connection succesful.');
+
+// Fire the data_received event
+//eventEmitter.emit('data_received');
 //}
 
 // Bind the connection event with the handler
 //eventEmitter.on('connection', connectHandler);
- 
+
 // Bind the data_received event with the anonymous function
 //eventEmitter.on('data_received', function() {
-   //console.log('data received succesfully.');
+//console.log('data received succesfully.');
 //});
 
-// Fire the connection event 
+// Fire the connection event
 //eventEmitter.emit('connection');
 
 //console.log("Program Ended.");

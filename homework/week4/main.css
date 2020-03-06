@@ -1,0 +1,17 @@
+body {
+    background: lightyellow;
+    font: 18px Arial, sans-serif;
+    position: absolute;
+    top: 10%;
+}
+  .child {
+    width:70px;
+    height:70px;
+    background-color:#666666;
+    position:absolute;
+    right:0px;
+    top:0px;
+  }
+h1 {
+    color: orange;
+}

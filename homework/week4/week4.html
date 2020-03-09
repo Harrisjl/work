@@ -4,6 +4,15 @@
 <title>My HTML Document</title>
 <link rel="stylesheet" href="styles/main.css">
 </head>
+<style>
+  .ancestors * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+  }
+  </style>
 <script src="week4.js"></script>
 <script>
 $(document).ready(function(){
@@ -29,7 +38,19 @@ $(document).ready(function(){
   <p>p (child)     
   </p> 
   <div class="absolute">This div element has position: absolute;</div>
+  <div class="ancestors">
+    <ul>ul (grandparent)  
+     <li>li (direct parent)
+       <span>span</span>
+     </li>
+   </ul>   
+ </div>
 
+ <div style="width:500px;">div (grandparent)   
+   <p>p (direct parent)
+     <span>span</span>
+   </p> 
+ </div>
 </div>
 </body>
 </html>

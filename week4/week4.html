@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My HTML Document</title>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<style>
+  .ancestors * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+  }
+  </style>
+<script src="week4.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").offsetParent().css("background-color", "red");
+  });
+});
+</script>
+<script>
+  $(document).ready(function(){
+    $("div").children().css({"color": "red", "border": "2px solid red"});
+  });
+  </script>
+</head>
+<body>
+  <h1></h1>
+      <button>Set background-color</button>
+    <div style="border:1px solid black;width:70%;position:absolute;left:10px;top:50px">
+        <div style="border:1px solid black;margin:50px;background-color:yellow">
+<p>The DIV element is a block element, and will always start on a new line and take up the full width available (stretches out to the left and right as far as it can).</p>
+
+<div class="descendants" style="width:500px;">div (current element) 
+  <p>p (child)     
+  </p> 
+  <div class="absolute">This div element has position: absolute;</div>
+  <div class="ancestors">
+    <ul>ul (grandparent)  
+     <li>li (direct parent)
+       <span>span</span>
+     </li>
+   </ul>   
+ </div>
+
+ <div style="width:500px;">div (grandparent)   
+   <p>p (direct parent)
+     <span>span</span>
+   </p> 
+ </div>
+</div>
+</body>
+</html>
